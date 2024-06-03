@@ -1,0 +1,114 @@
+.profile-links {
+    position: absolute;
+    background-color: #f0f0f0;
+    width: 150px;
+    border-radius: 10px;
+    padding: 10px;
+    right: 220px;
+    z-index: 20;
+    border: 1px solid black;
+}
+
+.profile-links > li {
+    list-style: none;
+    padding: 5px 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.profile-links > li a {
+    display: inline-block;
+    width: 100%;
+}
+
+.table-reservation-section {
+    max-height: 100vh;
+    min-height: 500px;
+    padding: 20px 200px;
+}
+
+.table-reservation-section .tabs {
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+    background-color: #f0f0f0;
+}
+
+.table-reservation-section .tabs div {
+    padding: 10px 20px;
+    height: 100%;
+    cursor: pointer;
+}
+
+.table-reservation-section .tabs .active {
+    background-color: #ba42ba;
+    color: white;
+}
+
+.table-reservation-section .title {
+    padding: 20px 0;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+form .booking-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 25px;
+    width: 50%;
+}
+
+form .booking-details > div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+form .booking-details > div > div {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+}
+
+form .booking-details > div > div :is(input, select) {
+    display: flex;
+    width: 50%;
+    height: 40px;
+    border-radius: 5px;
+    gap: 20px;
+    padding: 5px 15px;
+    border: 1px solid black;
+    font-size: 1rem;
+}
+
+form .booking-details > div span {            
+    font-size: 20px;
+    font-weight: 600;
+}
+
+form textarea {
+    border: 1px solid black;
+    padding: 5px 15px;
+    font-size: 1rem;
+}
+
+
+form .btns input {
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}

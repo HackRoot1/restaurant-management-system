@@ -1,0 +1,115 @@
+main {
+    display: flex;
+}
+
+nav {
+    padding: 0 30px;
+    width: calc(100vw - 250px);
+    margin-left: 250px;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: rgba(231, 31, 31, 0.822);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+
+    position: fixed;
+}
+
+.sidebar .logo {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 600;
+}
+.sidebar :is(.actions, .links, .logo) {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    gap: 20px;
+}
+
+.sidebar a, .sidebar input[type="submit"] {
+    background-color: aliceblue;
+    padding: 5px 15px;
+    text-align: center;
+    font-size: 20px;
+    width: 100%;
+    outline: none;
+    border: none;
+    height: 35px;
+    cursor: pointer;
+}
+
+
+.main-section {
+    padding: 30px 50px;
+    overflow-y: scroll;
+    margin-left: 250px;
+}
+
+.main-section .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.main-section .title .btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: antiquewhite;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+.table-details {
+    padding: 30px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table thead tr{
+    background-color: antiquewhite;
+}
+
+table thead td{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+table tr td{
+    border: 1px solid black;
+    padding: 10px;
+    width: 200px;
+    font-size: 1.2rem;
+}
+
+table tbody :is(.img, img ){
+    text-align: center;
+    width: 150px;
+    height: auto;
+}
+
+table tbody .actions > div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+table tbody .actions > div > div{
+    background-color: rgb(105, 105, 105);
+    padding: 5px 15px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}

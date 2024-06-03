@@ -1,0 +1,153 @@
+.profile-links {
+    position: absolute;
+    background-color: #f0f0f0;
+    width: 150px;
+    border-radius: 10px;
+    padding: 10px;
+    right: 220px;
+    z-index: 20;
+    border: 1px solid black;
+}
+
+.profile-links > li {
+    list-style: none;
+    padding: 5px 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.profile-links > li a {
+    display: inline-block;
+    width: 100%;
+}
+
+.checkout-section {
+    padding: 20px 200px;
+    min-height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: stretch;
+    align-items: stretch;
+    gap: 5%;
+}
+
+.card {
+    width: 65%;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.checkout {
+    /* border: 2px solid blue; */
+    width: 30%;
+    min-height: 400px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 0px 0px 20px 0;
+}
+
+
+.card > .title, .checkout > .title{
+    /* height: 40px; */
+    padding: 15px 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.card > .title {
+    padding: 15px 0;
+}
+
+.card .item {
+    max-height: 150px;
+    display: grid;
+    grid-template-columns: 150px auto auto auto;
+
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table thead tr, table tfoot tr {
+    border-bottom: 2px solid #8e8e8e;
+}
+
+tbody tr td img {
+    width: 150px;
+}
+
+table .theading {
+    font-size: 20px;
+}
+
+table .theading td{
+    padding: 5px 15px;
+}
+
+tfoot td {
+    padding: 5px 10px;
+    font-size: 18px;
+}
+
+.card .info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card .info .title{
+    font-size: 20px;
+}
+
+.card .quantity, .card .price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.card button {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(100, 167, 226);
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+.checkout .payment-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 5px 20px;
+}
+
+.checkout .payment-card > div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.checkout .payment-card > div input[type='text']{
+    height: 30px;
+    padding: 5px 15px;
+}
+
+.checkout .payment-card button{
+    height: 40px;
+    background-color: blue;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}

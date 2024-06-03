@@ -1,0 +1,203 @@
+1. landing page
+2. login page
+3. registration page
+
+
+============ User ================
+
+4. user dashboard page  --------- can provide feedback 
+5. user single item displaying page  ........ by ajax maybe 
+6. user checkout page 
+7. user cart page 
+8. user check orders page 
+9. user profile page 
+10. user reservation table page
+
+
+=========== Staff ===================
+
+11. can view incoming orders 
+12. can change status of orders i.e. prepared, completed, pending
+13. can view reserved tables and orders 
+
+
+============ Admin =================
+
+14. admin dashboard page                dashboard.php
+15. admin add/edit menu page            add_food_lists.html 
+16. admin view menu page.               food_lists.html
+17. admin add/edit table page           add_table_reservation.html 
+18. admin check customer orders page    customers_orders.html 
+19. admin can add staff                 add_staff.html 
+20. admin profile page                  admin_profile.html
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+===================== Database ====================
+
+1. Registration Table  - Users details 
+
+    1. id 
+    2. first name
+    3. last name 
+    4. username 
+    5. contact no 
+    6. email 
+    7. address 
+    8. password
+
+
+
+
+INSERT INTO 
+        users_data 
+        (id, username, email, password) 
+VALUES 
+    (1, 'john_doe', 'john.doe@example.com', 'password123'),
+    (2, 'jane_smith', 'jane.smith@example.com', 'abc123'),
+    (3, 'mike_jones', 'mike.jones@example.com', 'qwerty'),
+    (4, 'sarah_brown', 'sarah.brown@example.com', 'pass123'),
+    (5, 'alex_williams', 'alex.williams@example.com', 'password321');
+
+
+
+
+2. Food list table 
+
+    1. food name 
+    2. food category 
+    3. food description 
+    4. food ingredients 
+    5. price 
+    6. quantity 
+    7. discount percentage 
+    8. primary image
+    9. set of images 
+
+
+    INSERT INTO `fooditems` (`id`, `food_name`, `food_category`, `food_description`, `food_ingredients`, `price`, `quantity`, `discount_percentage`, `primary_img`, `set_of_imgs`) VALUES
+(1, 'Spaghetti Bolognese', 'Pasta', 'Classic spaghetti with rich meat sauce', 'Spaghetti, ground beef, tomato sauce, garlic, onion, basil', 90, 50, 0, 'spaghetti_bolognese.jpg', 'spaghetti_bolognese.jpg,spaghetti_bolognese_2.jpg,spaghetti_bolognese_3.jpg'),
+(2, 'Chicken Caesar Salad', 'Salad', 'Crisp romaine lettuce with grilled chicken and Caesar dressing', 'Romaine lettuce, grilled chicken breast, Caesar dressing, croutons, Parmesan cheese', 100, 30, 10, 'chicken_caesar_salad.jpg', 'chicken_caesar_salad.jpg,chicken_caesar_salad_2.jpg,chicken_caesar_salad_3.jpg'),
+(3, 'Margherita Pizza', 'Pizza', 'Traditional Italian pizza with tomato sauce, mozzarella, and basil', 'Pizza dough, tomato sauce, mozzarella cheese, fresh basil', 130, 40, 5, 'margherita_pizza.jpg', 'margherita_pizza.jpg,margherita_pizza_2.jpg,margherita_pizza_3.jpg'),
+(4, 'Beef Burger', 'Burgers', 'Juicy beef patty with lettuce, tomato, and pickles on a sesame seed bun', 'Beef patty, sesame seed bun, lettuce, tomato, pickles, ketchup, mustard', 100, 45, 0, 'beef_burger.jpg', 'beef_burger.jpg,beef_burger_2.jpg,beef_burger_3.jpg'),
+(5, 'Vegetable Stir Fry', 'Stir Fry', 'Fresh mixed vegetables stir-fried in a savory sauce', 'Broccoli, bell peppers, carrots, snap peas, onions, soy sauce, garlic', 80, 35, 0, 'vegetable_stir_fry.jpg', 'vegetable_stir_fry.jpg,vegetable_stir_fry_2.jpg,vegetable_stir_fry_3.jpg'),
+(6, 'Chocolate Brownie Sundae', 'Desserts', 'Warm chocolate brownie topped with vanilla ice cream and chocolate syrup', 'Brownie mix, vanilla ice cream, chocolate syrup', 60, 25, 15, 'chocolate_brownie_sundae.jpg', 'chocolate_brownie_sundae.jpg,chocolate_brownie_sundae_2.jpg,chocolate_brownie_sundae_3.jpg'),
+(7, 'Tuna Sandwich', 'Sandwiches', 'Flaky tuna mixed with mayo, served on toasted bread with lettuce and tomato', 'Canned tuna, mayonnaise, bread, lettuce, tomato', 80, 20, 0, 'tuna_sandwich.jpg', 'tuna_sandwich.jpg,tuna_sandwich_2.jpg,tuna_sandwich_3.jpg'),
+(8, 'Chicken Tikka Masala', 'Indian', 'Tender chicken in a creamy tomato sauce with aromatic spices', 'Chicken breast, tomato sauce, cream, garam masala, garlic, ginger', 120, 30, 0, 'chicken_tikka_masala.jpg', 'chicken_tikka_masala.jpg,chicken_tikka_masala_2.jpg,chicken_tikka_masala_3.jpg'),
+(9, 'Caesar Wrap', 'Wraps', 'Grilled chicken, romaine lettuce, and Caesar dressing wrapped in a flour tortilla', 'Grilled chicken breast, romaine lettuce, Caesar dressing, flour tortilla', 90, 35, 10, 'caesar_wrap.jpg', 'caesar_wrap.jpg,caesar_wrap_2.jpg,caesar_wrap_3.jpg'),
+(10, 'Vegetarian Pizza', 'Pizza', 'Delicious pizza loaded with assorted vegetables', 'Pizza dough, tomato sauce, mozzarella cheese, bell peppers, onions, olives, mushrooms', 130, 40, 0, 'vegetarian_pizza.jpg', 'vegetarian_pizza.jpg,vegetarian_pizza_2.jpg,vegetarian_pizza_3.jpg'),
+(11, 'Shrimp Pad Thai', 'Thai', 'Stir-fried rice noodles with shrimp, egg, bean sprouts, and peanuts', 'Rice noodles, shrimp, egg, bean sprouts, peanuts, tamarind sauce', 150, 25, 0, 'shrimp_pad_thai.jpg', 'shrimp_pad_thai.jpg,shrimp_pad_thai_2.jpg,shrimp_pad_thai_3.jpg'),
+(12, 'Classic Cheeseburger', 'Burgers', 'All-American cheeseburger with lettuce, tomato, onion, and pickles', 'Beef patty, cheese, sesame seed bun, lettuce, tomato, onion, pickles, ketchup, mustard', 110, 40, 0, 'classic_cheeseburger.jpg', 'classic_cheeseburger.jpg,classic_cheeseburger_2.jpg,classic_cheeseburger_3.jpg'),
+(13, 'Penne Arrabiata', 'Pasta', 'Penne pasta in a spicy tomato sauce with garlic and chili flakes', 'Penne pasta, tomato sauce, garlic, chili flakes, olive oil', 100, 30, 0, 'penne_arrabiata.jpg', 'penne_arrabiata.jpg,penne_arrabiata_2.jpg,penne_arrabiata_3.jpg'),
+(14, 'Greek Salad', 'Salad', 'Fresh salad with tomatoes, cucumbers, olives, onions, and feta cheese', 'Tomatoes, cucumbers, olives, onions, feta cheese, olive oil, oregano', 90, 35, 0, 'greek_salad.jpg', 'greek_salad.jpg,greek_salad_2.jpg,greek_salad_3.jpg'),
+(15, 'Chicken Quesadilla', 'Mexican', 'Grilled chicken and melted cheese folded in a flour tortilla', 'Grilled chicken breast, cheese, flour tortilla', 80, 25, 0, 'chicken_quesadilla.jpg', 'chicken_quesadilla.jpg,chicken_quesadilla_2.jpg,chicken_quesadilla_3.jpg'),
+(16, 'Mushroom Risotto', 'Italian', 'Creamy risotto cooked with mushrooms, onions, and Parmesan cheese', 'Arborio rice, mushrooms, onion, Parmesan cheese, vegetable broth', 110, 30, 0, 'mushroom_risotto.jpg', 'mushroom_risotto.jpg,mushroom_risotto_2.jpg,mushroom_risotto_3.jpg'),
+(17, 'Fish and Chips', 'Seafood', 'Crispy battered fish served with seasoned fries and tartar sauce', 'White fish fillets, batter, potatoes, tartar sauce', 120, 20, 0, 'fish_and_chips.jpg', 'fish_and_chips.jpg,fish_and_chips_2.jpg,fish_and_chips_3.jpg'),
+(18, 'Chicken Fajitas', 'Mexican', 'Sizzling chicken strips with bell peppers and onions, served with tortillas and toppings', 'Chicken breast, bell peppers, onions, tortillas, salsa, sour cream, guacamole', 140, 25, 0, 'chicken_fajitas.jpg', 'chicken_fajitas.jpg,chicken_fajitas_2.jpg,chicken_fajitas_3.jpg'),
+(19, 'Caprese Salad', 'Salad', 'Simple salad made with fresh tomatoes, mozzarella cheese, and basil', 'Tomatoes, mozzarella cheese, basil, balsamic glaze', 70, 30, 0, 'caprese_salad.jpg', 'caprese_salad.jpg,caprese_salad_2.jpg,caprese_salad_3.jpg'),
+(20, 'BBQ Pulled Pork Sandwich', 'Sandwiches', 'Slow-cooked pulled pork smothered in barbecue sauce, served on a bun', 'Pork shoulder, barbecue sauce, sandwich bun, coleslaw', 110, 20, 0, 'bbq_pulled_pork_sandwich.jpg', 'bbq_pulled_pork_sandwich.jpg,bbq_pulled_pork_sandwich_2.jpg,bbq_pulled_pork_sandwich_3.jpg');
+
+
+
+
+3. "reservation Table" Table 
+
+    1. table no
+    2. seats
+    
+
+4. Staff Table 
+
+    1. first name 
+    2. last name 
+    3. contact no 
+    4. role 
+    5. shift 
+
+
+5. Users cart Table 
+
+    case 1: Check if food item is already added to cart or not 
+
+    1. id 
+    2. food id 
+    3. user id 
+    
+
+6. Users card details 
+
+    1. user id 
+    2. name on card 
+    3. card no 
+    4. expiry date 
+    5. cvv 
+
+
+7. Orders Table 
+
+    1. user id 
+    2. food id 
+    3. quantity 
+    4. total price 
+    5. status 
+
+
+8. table reserved - table 
+
+    1. user id 
+    2. table id 
+    3. date 
+    4. guests 
+    5. guests first name 
+    6. guests last name 
+    7. guests email name 
+    8. guests phone name 
+    9. guests additional request name 
+    10. status 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+========================= User Steps =====================
+
+
+1. User register first - 
+    1. full name 
+    2. username 
+    3. password 
+
+2. After registration user goes to the shopping home page 
+
+    1. display all food items using pagination logic i.e. 20 items at a time 
+    2. use filters for categories 
+    3. use filters for sorting by price ascending or descending 
+
+3. After selecting a particular food item by user - 
+    1. display that food itme's set of images 
+    2. user can add that item in cart or can directly by that item 
+
+4. 

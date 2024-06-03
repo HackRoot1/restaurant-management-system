@@ -1,0 +1,138 @@
+.profile-links {
+    position: absolute;
+    background-color: #f0f0f0;
+    width: 150px;
+    border-radius: 10px;
+    padding: 10px;
+    right: 220px;
+    z-index: 20;
+    border: 1px solid black;
+}
+
+.profile-links > li {
+    list-style: none;
+    padding: 5px 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.profile-links > li a {
+    display: inline-block;
+    width: 100%;
+}
+
+.checkout-section {
+    padding: 20px 200px;
+    /* min-height: 400px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: stretch;
+    align-items: stretch;
+    gap: 5%;
+}
+
+.card {
+    width: 100%;
+    /* min-height: 400px; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.card > .title{
+    /* height: 40px; */
+    padding: 15px 0px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.card .item {
+    max-height: 150px;
+    display: grid;
+    grid-template-columns: 150px auto auto auto;
+
+}
+
+table, thead td, tbody td, tfoot td {
+    border-collapse: collapse;
+    border: 2px solid #8e8e8e;
+}
+
+thead td {
+    font-weight: 600;
+}
+
+tbody tr td img {
+    width: 150px;
+}
+
+table .theading {
+    font-size: 20px;
+}
+
+table .theading td{
+    padding: 5px 15px;
+}
+
+tfoot td {
+    padding: 5px 10px;
+    font-size: 18px;
+}
+
+.card .info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card .info .title{
+    font-size: 20px;
+}
+
+.card .quantity, .card .price, .card .status, .card .buy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.card .status > .ordered{
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 15px;
+}
+
+.card .buy > .buy-edit span{
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+.card .buy > .buy-edit span a{
+    color: white;
+}
+
+.card .buy > .buy-return{
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+.card .buy > .buy-return a{
+    color: white;
+}
+
+.card .status > .cancelled{
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 15px;
+}

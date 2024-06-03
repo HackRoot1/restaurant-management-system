@@ -1,0 +1,20 @@
+
+
+Book Table
+
+Make query for entering details about guests
+
+Make feature for by again and book again buttons for my_orders.php and table_reserved.php pages respectively.
+
+Make feature for edit order and reservation
+
+
+
+Profile
+
+Can edit profile info and enter profile info also 
+
+
+
+Lastly redesign pages
+

@@ -1,0 +1,76 @@
+main {
+    display: flex;
+}
+
+nav {
+    padding: 0 30px;
+    width: calc(100vw - 250px);
+}
+
+.sidebar {
+    width: 250px;
+    background-color: rgba(231, 31, 31, 0.822);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.sidebar .logo {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 600;
+}
+.sidebar :is(.actions, .links, .logo) {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    gap: 20px;
+}
+
+.sidebar a, .sidebar input[type="submit"] {
+    background-color: aliceblue;
+    padding: 5px 15px;
+    text-align: center;
+    font-size: 20px;
+    width: 100%;
+    outline: none;
+    border: none;
+    height: 35px;
+    cursor: pointer;
+}
+
+
+.main-section {
+    padding: 30px 50px;
+}
+
+.main-section .title {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.table-details {
+    padding: 50px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table thead tr{
+    background-color: antiquewhite;
+}
+
+table thead td{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+table tr td{
+    border: 1px solid black;
+    padding: 10px;
+}
+
