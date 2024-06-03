@@ -1,20 +1,11 @@
 
 
-Book Table
 
-Make query for entering details about guests
+Profile pages
 
-Make feature for by again and book again buttons for my_orders.php and table_reserved.php pages respectively.
+change password system 
 
-Make feature for edit order and reservation
+Filter on home page
+pagination for home page 
 
-
-
-Profile
-
-Can edit profile info and enter profile info also 
-
-
-
-Lastly redesign pages
-
+dates on book table page
