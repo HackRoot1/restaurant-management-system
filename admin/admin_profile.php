@@ -1,4 +1,4 @@
-<!-- us_food.html === user single food .html  -->
+<!-- us_food.php === user single food .php  -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -175,16 +175,16 @@
                 
                 <div class="links">
                     <a href="./dashboard.php">Home</a>
-                    <a href="./food_lists.html">Food Lists</a>
-                    <a href="./staff_lists.html">Staff Lists</a>
-                    <a href="./add_table_reservation.html">Table Reservations</a>
-                    <a href="./customers_orders.html">Customer Orders</a>
+                    <a href="./food_lists.php">Food Lists</a>
+                    <a href="./staff_lists.php">Staff Lists</a>
+                    <a href="./add_table_reservation.php">Table Reservations</a>
+                    <a href="./customers_orders.php">Customer Orders</a>
                 </div>
 
             </div>
 
             <div class="actions">
-                <a href="./admin_profile.html">Settings</a>
+                <a href="./admin_profile.php">Settings</a>
                 <a href="#">Logout</a>
             </div>
         </section>  
@@ -205,16 +205,16 @@
                 </div>
 
                 <div class = "links-icons">
-                    <!-- <span><a href="./login.html">Log In</a></span>
-                    <span><a href="./registration.html">Sign Up</a></span> -->
+                    <!-- <span><a href="./login.php">Log In</a></span>
+                    <span><a href="./registration.php">Sign Up</a></span> -->
                     <span><i class="fa-solid fa-magnifying-glass"></i></span>
                     <span>
-                        <a href="./profile.html">
+                        <a href="./profile.php">
                             <i class="fa-regular fa-user"></i>
                         </a>
                     </span>
                     <span>
-                        <a href="./checkout.html">    
+                        <a href="./checkout.php">    
                             <i class="fa-solid fa-bag-shopping"></i>
                         </a>
                     </span>

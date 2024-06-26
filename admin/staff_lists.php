@@ -1,4 +1,4 @@
-<!-- us_food.html === user single food .html  -->
+<!-- us_food.php === user single food .php  -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Users Dashboard</title>
-
+    
     <!-- ============= jquery cdn =========== -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
@@ -127,8 +127,6 @@
             cursor: pointer;
         }
 
-
-        
         #modal {
             position: fixed;
             height: 100vh;
@@ -142,8 +140,8 @@
 
         #modal .modal-box {
             border-radius: 5px;
-            min-height: 60%;
-            width: 60%;
+            min-height: 90%;
+            width: 70%;
             background-color: #ba42ba;
             position: relative;
             color: white;
@@ -218,6 +216,7 @@
             font-weight: 600;
             background: #f0f0f0;
         }
+
     </style>
 
 </head>
@@ -231,17 +230,17 @@
                 
                 <div class="links">
                     <a href="./dashboard.php">Home</a>
-                    <a href="./food_lists.html">Food Lists</a>
-                    <a href="./staff_lists.html">Staff Lists</a>
-                    <a href="./add_table_reservation.html">Table Reservations</a>
-                    <a href="./customers_orders.html">Customer Orders</a>
+                    <a href="./food_lists.php">Food Lists</a>
+                    <a href="./staff_lists.php">Staff Lists</a>
+                    <a href="./add_table_reservation.php">Table Reservations</a>
+                    <a href="./customers_orders.php">Customer Orders</a>
                 </div>
 
             </div>
 
             <div class="actions">
-                <a href="./admin_profile.html">Settings</a>
-                <a href="../index.html">Logout</a>
+                <a href="./admin_profile.php">Settings</a>
+                <a href="#">Logout</a>
             </div>
         </section>  
 
@@ -261,19 +260,19 @@
                 </div>
 
                 <div class = "links-icons">
-                    <!-- <span><a href="./login.html">Log In</a></span>
-                    <span><a href="./registration.html">Sign Up</a></span> -->
+                    <!-- <span><a href="./login.php">Log In</a></span>
+                    <span><a href="./registration.php">Sign Up</a></span> -->
                     <span><i class="fa-solid fa-magnifying-glass"></i></span>
-                    <!-- <span>
-                        <a href="./profile.html">
+                    <span>
+                        <a href="./profile.php">
                             <i class="fa-regular fa-user"></i>
                         </a>
                     </span>
                     <span>
-                        <a href="./checkout.html">    
+                        <a href="./checkout.php">    
                             <i class="fa-solid fa-bag-shopping"></i>
                         </a>
-                    </span> -->
+                    </span>
                 </div>
             </nav>
 
@@ -281,11 +280,11 @@
             <section class="main-section">
                 <div class="title">
                     <span>
-                        Table Reservations
+                        Staff Lists
                     </span>
                     <span class="btns">
                         <a href="#" class = "add-modal">
-                            Add Tables
+                            Add Staff
                         </a>
                     </span>
                 </div>
@@ -296,37 +295,51 @@
                     <table>
                         <thead>
                             <tr>
-                                <td>Table No</td>
-                                <td>Seats</td>
-                                <td>Status</td>
+                                <td>Name</td>
+                                <td>Contact No.</td>
+                                <td>Role</td>
+                                <td>Shift</td>
                                 <td>Action</td>
                             </tr>
                         </thead>
 
                         <tbody>
                             <tr>
-                                <td>001</td>
-                                <td>06</td>
-                                <td>Booked</td>
+                                <td>ABC</td>
+                                <td>9879879877</td>
+                                <td>Cook</td>
+                                <td>First Shift</td>
                                 <td class = "actions">
                                     <div>
-                                        <div>View</div>
                                         <div>Remove</div>
-                                        <div class = "add-modal" data-foodid = "1">Edit</div>
+                                        <div class = "add-modal">Edit</div>
                                     </div>
                                 </td>
                             </tr>
-                            
+
                             
                             <tr>
-                                <td>002</td>
-                                <td>04</td>
-                                <td>Empty</td>
+                                <td>DEF</td>
+                                <td>6546546544</td>
+                                <td>Cook</td>
+                                <td>Second Shift</td>
                                 <td class = "actions">
                                     <div>
-                                        <div>View</div>
                                         <div>Remove</div>
-                                        <div class = "add-modal" data-foodid = "2">Edit</div>
+                                        <div class = "add-modal">Edit</div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>GHI</td>
+                                <td>3213213211</td>
+                                <td>Dilivery Boy</td>
+                                <td>First Shift</td>
+                                <td class = "actions">
+                                    <div>
+                                        <div>Remove</div>
+                                        <div class = "add-modal">Edit</div>
                                     </div>
                                 </td>
                             </tr>
@@ -350,19 +363,39 @@
                 <div class="add-form">
 
                     <div class="title">
-                        Add Table
+                        Add Food Item
                     </div>
 
                     <form action="">
                         
                         <div>
-                            <label for="tableNo">Table No</label>
-                            <input type="text" id = "tableNo">
+                            <label for="fname">First Name</label>
+                            <input type="text" id = "fname">
                         </div>
                         
                         <div>
-                            <label for="seats">Seats</label>
-                            <input type="text" id = "seats">
+                            <label for="lname">Last Name</label>
+                            <input type="text" id = "lname">
+                        </div>
+
+                        <div>
+                            <label for="c_no">Contact No</label>
+                            <input type="text" id = "c_no">
+                        </div>
+                    
+                        <div>
+                            <label for="role">Role</label>
+                            <select name="role" id="role">
+                                <option value="one">one</option>
+                                <option value="one">one</option>
+                                <option value="one">one</option>
+                                <option value="one">one</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="shift">Shift</label>
+                            <input type="text" id = "shift">
                         </div>
                     
                         <div class="btns">
@@ -374,10 +407,7 @@
             </div>
         </section>
 
-
     </main>
-
-    
 
     <script>
         $(document).ready(function() {
@@ -387,11 +417,13 @@
                 $("#modal").show();
             });
 
+
             $(".close-btn").on("click", function() {
                 $("#modal").hide();
             });
         });
     </script>
+    
 
 </body>
 </html>

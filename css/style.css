@@ -20,6 +20,7 @@ body {
 /* width */
 ::-webkit-scrollbar {
     width: 5px;
+    height: 5px;
 }
 
 /* Track */
@@ -463,12 +464,12 @@ main .blogs-sections > .boxes .box img{
 .best-categories .boxes {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     width: auto;
     height: 250px;
     /* background-color: #534f53; */
     gap: 20px;
-    overflow-y: scroll;
+    overflow-y: hidden;
 }
 
 .best-categories .boxes .box{
@@ -476,7 +477,7 @@ main .blogs-sections > .boxes .box img{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 200px;
+    min-width: 200px;
     gap: 10px;
     padding: 20px;
     /* background-color: #ba42ba; */

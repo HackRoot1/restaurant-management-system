@@ -119,7 +119,7 @@
         <section id = "login-section">
 
             <div class = "login-form">
-                <div class="return-page"><a href="../index.html">Back</a></div>
+                <div class="return-page"><a href="../index.php">Back</a></div>
                 <div>
                     <div class="title">Login</div>
                     <div class="data">Welcome to log in to your restaurant management system.</div>
