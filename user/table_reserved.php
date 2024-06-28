@@ -232,7 +232,7 @@
 
                 if(confirm("Are you sure? want to cancel reservation")) {
                     $.ajax({
-                        url : "cancel_order.php",
+                        url : "./models/cancel_order.php",
                         method : "POST",
                         data : { c_tableno : tableno },
                         success : function (data) {

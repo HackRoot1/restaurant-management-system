@@ -1,6 +1,6 @@
 <?php 
 
-    require("session.php");
+    require("../session.php");
 
     $get_user_data_query = "SELECT * FROM users_data WHERE email = '{$_SESSION['email']}'";
     $get_user_data = mysqli_query($conn, $get_user_data_query) or die("User Not available");
@@ -23,20 +23,20 @@
         <section class="food">
             <div class="food-container">
                 <div class="food-items food-1">
-                    <img src="./images/desi-meals.png" alt="" id="food-1">
+                    <img src="../assets/images/desi-meals.png" alt="" id="food-1">
                 </div>
                 <div class="food-items food-2">
-                    <img src="./images/desi-meals2.png" alt="" id="food-2">
+                    <img src="../assets/images/desi-meals2.png" alt="" id="food-2">
                 </div>
                 
                 <div class="food-items food-3">
                     <div class="btn">
                         More..
                     </div>
-                    <img src="./images/desi-meals3.png" alt="" id="food-3">
+                    <img src="../assets/images/desi-meals3.png" alt="" id="food-3">
                 </div>
                 <div class="food-items food-4">
-                    <img src="./images/desi-meals4.png" alt="" id="food-4">
+                    <img src="../assets/images/desi-meals4.png" alt="" id="food-4">
                 </div>
             </div>
 

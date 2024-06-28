@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- ============= jquery cdn =========== -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script src="./js/jQuery.js"></script>
+    <script src="../assets/js/jQuery.js"></script>
 
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/<?= $cssPage ?>.css">
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/<?= $cssPage ?>.css">
 
 
     <style>
@@ -22,8 +23,9 @@
             border: none;
             text-align: start;
             font-size: 20px;
-            cursor: pointer;
             font-weight: 400;
+            font-family: sans-serif;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -60,7 +62,7 @@
     </nav>
 
 
-    <section class="profile-links">
+    <section class="profile-links" id = "profile-links-tab">
         <li><a href="./checkout.php">Cart</a></li>
         <li><a href="./my_orders.php">Your Orders</a></li>
         <li><a href="./table_reserved.php">Reservations</a></li>
@@ -79,6 +81,11 @@
 
             $(".fa-user").on("click", function() {
                 $(".profile-links").slideToggle();
+            });
+
+            $(document).on("click", (e) => {
+                console.log(e.target === $(".profile-links"));
+                (e.target === $(".profile-links")) ? $(".profile-links").hide() : false;
             });
 
         });

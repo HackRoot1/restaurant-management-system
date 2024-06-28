@@ -21,6 +21,10 @@
     width: 100%;
 }
 
+.profile-links > li input {
+    font-family: sans-serif;
+}
+
 .checkout-section {
     padding: 20px 200px;
     min-height: 400px;

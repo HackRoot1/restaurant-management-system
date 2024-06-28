@@ -1,6 +1,6 @@
 <?php 
 
-    require("session.php");
+    require("../session.php");
 
     $get_user_data_query = "SELECT * FROM users_data WHERE email = '{$_SESSION['email']}'";
     $get_user_data = mysqli_query($conn, $get_user_data_query) or die("User Not available");
@@ -56,7 +56,7 @@
                             <tr>
                                 <td>
                                     <div class="img">
-                                        <img src="./images/food.png" alt="Food Image">
+                                        <img src="../assets/images/food.png" alt="Food Image">
                                     </div>
                                 </td>
                                 <td>
@@ -158,7 +158,7 @@
                             <tr>
                                 <td>
                                     <div class="img">
-                                        <img src="./images/food.png" alt="Food Image">
+                                        <img src="../assets/images/food.png" alt="Food Image">
                                     </div>
                                 </td>
                                 <td>
@@ -241,7 +241,7 @@
 
                 if(confirm("Are you sure want to cancel order")) {
                     $.ajax({
-                        url : "cancel_order.php",
+                        url : "./models/cancel_order.php",
                         method : "POST",
                         data : { c_itemId : foodId },
                         success : function (data) {

@@ -1,0 +1,44 @@
+footer {
+    background-color: #ba42ba;
+    color: white;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    padding: 20px 200px;
+    gap: 20px;
+}
+
+footer a {
+    color: white;
+}
+
+footer .title {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+hr {
+    width: 100%;
+}
+footer .sections {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+footer .sections > div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer .sections .title {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+footer .copyright {
+    text-align: center;
+}

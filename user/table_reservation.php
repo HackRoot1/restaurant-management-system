@@ -1,6 +1,6 @@
 <?php 
 
-    require("session.php");
+    require("../session.php");
 
     $get_user_data_query = "SELECT * FROM users_data WHERE email = '{$_SESSION['email']}'";
     $get_user_data = mysqli_query($conn, $get_user_data_query) or die("User Not available");

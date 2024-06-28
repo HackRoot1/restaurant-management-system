@@ -1,0 +1,313 @@
+/* ====================== nav start ==================== */
+nav {
+    background-color: #fff;
+    color: #000;
+
+    height: 70px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 200px;
+}
+
+nav .title {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+nav :is(.links-items, .links-icons) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+}
+
+nav .links-items a {
+    font-size: 18px;
+}
+
+/* ======================= nav end ================= */
+
+/* =============== banner ================== */
+main .banner {
+    min-height: 500px;
+    background-color: #e7dee9;
+    padding: 0 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .banner div {
+    /* width: 50%; */
+    /* height: 100%; */
+}
+
+main .banner .banner-information {
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    height: 500px;
+    gap: 30px;
+}
+
+main .banner .banner-information .description {
+    font-size: 25px;
+}
+
+main .banner .banner-information .title {
+    font-size: 40px;
+}
+
+main .banner .banner-information .tag {
+    width: 150px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(231, 31, 31, 0.822);
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.banner-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-img img {
+    width: 70%;
+}
+
+/* ================= end ============== */
+
+main .featured-products {
+    height: 100px;
+    background-color: #f0f0f0;
+    padding: 0 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+}
+
+main .featured-products .links-tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+main .featured-products .links-tabs a {
+    border-bottom: 3px solid #000;
+}
+
+main .featured-products .links-tabs button {
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #e0c3e7;
+}
+
+/* ================= end =================== */
+
+/* ====================== menu items ================ */
+
+main .menu-list {
+    min-height: 400px;
+    padding: 20px 200px;
+}
+
+main .menu-list .boxes {
+    margin: 50px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(18rem, 100%), 1fr));
+    gap: 2.5rem;
+}
+
+main .menu-list .load-more {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .menu-list .load-more button {
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #ba42ba;
+    color: white;
+}
+
+main .menu-list .boxes .box {
+    min-height: 250px;
+    color: #000000;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+main .menu-list .boxes .box:hover {
+    box-shadow: 2px 4px 1rem #8a8181;
+}
+
+main .menu-list .boxes .box .box-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+main .menu-list .boxes .box .box-img img {
+    max-width: 100%;
+    padding: 10px;
+    max-height: 250px;
+    border-radius: 20px;
+}
+
+main .menu-list .boxes .box .box-img .discount {
+    position: absolute;
+    bottom: 20px;
+    left: 0px;
+    padding: 5px 10px;
+    color: white;
+    background-color: blue;
+    border-radius: 0 5px 5px 0;
+}
+
+main .menu-list .boxes .box :is(.details, .price, .box-title) {
+    padding: 10px 10px;
+}
+/* ================= end ==================== */
+
+.box-title,
+.details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box-title .title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.rating {
+    background-color: green;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+}
+
+/* ================= testimonials ===================== */
+
+main .testimonials {
+    min-height: 400px;
+    background: url(../images/alexander-mils-5X8oLkzZ1fI-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .testimonials .box {
+    background-color: #b87cc7;
+    color: #000;
+    padding: 30px;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+main .testimonials .box button {
+    width: 150px;
+    height: 40px;
+
+    background-color: aliceblue;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+main .testimonials .box .name {
+    font-size: 30px;
+}
+
+main .testimonials .box .title {
+    font-size: 20px;
+}
+
+/* ================ end ================== */
+
+/* =============== blogs ============= */
+
+main .blogs-sections {
+    /* margin: 50px 0 0 0; */
+    padding: 50px 200px;
+    display: flex;
+    flex-direction: column;
+    background-color: #e7dee9;
+}
+
+main .blogs-sections > .title {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+main .blogs-sections .moves {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+}
+
+main .blogs-sections .moves span {
+    border: 1px solid red;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .blogs-sections > .boxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(15.25rem, 100%), 1fr));
+    gap: 1rem;
+}
+
+main .blogs-sections > .boxes .box img {
+    width: 100%;
+}
+
+/* ============= end ============ */

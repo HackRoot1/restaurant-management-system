@@ -1,6 +1,6 @@
 <?php
 
-require("session.php");
+require("../session.php");
 
 // fetch users data first 
 $get_user_data_query = "SELECT * FROM users_data WHERE email = '{$_SESSION['email']}'";
@@ -61,7 +61,7 @@ include("header.php");
                         <tr>
                             <td>
                                 <div class="img">
-                                    <img src="./images/food.png" alt="Food Image">
+                                    <img src="../assets/images/food.png" alt="Food Image">
                                 </div>
                             </td>
                             <td>
@@ -320,7 +320,7 @@ include("header.php");
 
             if (confirm("Are you sure want to remove item")) {
                 $.ajax({
-                    url: "remove_item.php",
+                    url: "./models/remove_item.php",
                     method: "POST",
                     data: {
                         itemId: item
@@ -357,14 +357,18 @@ include("header.php");
             console.log(data);
 
             $.ajax({
-                url: "customer_order_done.php",
+                url: "./models/customer_order_done.php",
                 method: "POST",
                 data: {
                     c_order_data: data
                 },
                 success: function(data) {
-                    alert("Your order is placed" + data);
-                    location.pathname = "restaurant-template-php/my_orders.php";
+                    if(data){
+                        alert("Your order is placed" + data);
+                        location.pathname = "restaurant-template-php/user/my_orders.php";
+                    }else {
+                        alert("Error");
+                    }
                 }
             });
         });

@@ -1,6 +1,6 @@
 <?php 
 
-require("session.php");
+require($_SERVER['DOCUMENT_ROOT'] . "/restaurant-template-php/session.php");
 
 // fetch users data first 
 $get_user_data_query = "SELECT * FROM users_data WHERE email = '{$_SESSION['email']}'";

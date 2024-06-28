@@ -1,11 +1,39 @@
 
+/root-folder
+
+1. index page 
+2. login page 
+3. registration page 
+
+/root-folder/customer-folder/
+
+1. dashboard - index.php 
+    - pagination load more
+    - filter based on category 
+    - combine both pagination and filter 
+
+2. table_reservation 
+    - add upcomming dates / calendar that will select only upcomming dates 
+    - add validations to all fields 
+
+3. us_food i.e. user single food details 
+    - display proper images
+    - display price 
+
+4. checkout 
+    - add validations for all fields
 
 
-Profile pages
+5. my orders 
+6. table reserved 
+    - fix book again button 
+    - fix edit button 
 
-change password system 
+7. profile 
+    - add validations for all fields
 
-Filter on home page
-pagination for home page 
+    - header common 
+    - footer common 
 
-dates on book table page
+
+--- Refactor code 
